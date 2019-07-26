@@ -12,7 +12,7 @@ class App extends Component {
         thisYear++;
         end = new Date(m + '/' + d + '/' + thisYear.toString() +' 00:01 AM');
     }
-    return Math.floor((end - now) / _day);
+    return Math.floor((end - now) / _day + 1);
 
   }
   createTable = () => {
